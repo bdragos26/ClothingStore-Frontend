@@ -1,0 +1,127 @@
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(255, 173, 96, 0.7), rgba(244, 93, 72, 0.7));
+    backdrop-filter: blur(10px); /* Adds the blur effect */
+}
+
+.back-button {
+    background-color: #b5651d; /* Autumn brown */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-button:hover {
+    background-color: #8b4513; /* Darker brown */
+    transform: scale(1.1);
+}
+
+.login-container {
+    width: 320px;
+    padding: 40px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 0.8s ease;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #4f2c1d; /* Deep autumn brown */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    background-color: #FFF3E0; /* Light autumn hue */
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #b5651d;
+    outline: none;
+}
+
+.login-button {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #b5651d;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #8b4513;
+    transform: scale(1.05);
+}
+
+.login-links {
+    margin-top: 20px;
+    color: #555;
+}
+
+.login-links p {
+    cursor: pointer;
+    color: #b5651d;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.login-links p:hover {
+    color: #8b4513;
+}
+.home-button {
+    background-color: #b5651d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: absolute; /* Adjust positioning as needed */
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Position to the right */
+}
+
+.home-button:hover {
+    background-color: #8b4513;
+    transform: scale(1.1);
+}
+
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

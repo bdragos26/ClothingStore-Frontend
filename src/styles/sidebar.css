@@ -1,0 +1,34 @@
+    .sidebar {
+        width: 1489px; /* Make it stretch across the entire width */
+        height: 20px; /* Set a fixed height for the top bar */
+        background-color: #fafafa;
+        position: absolute; /* Fix it at the top of the page */
+        top: 61px; /* Align it at the top */
+        display: inline-list-item; /* Make the items display in a row */
+        padding: 15px; /* Horizontal padding for spacing */
+        z-index: 1; /* Ensure it appears above other content */
+        border-radius: 10px; /* No rounded corners */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow for visual effect */
+    }
+
+    .sidebar h3 {
+        margin: 200px;
+        color: #ffb340;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 1px;
+        display: flex; /* Display the items horizontally */
+        gap: 20px; /* Add spacing between items */
+        margin: 0px; /* aligns horizontally if needed*/
+    }
+
+    .sidebar ul li {
+        cursor: pointer;
+    }
+
+    .sidebar ul li:hover {
+        color: #fd0202;
+        transform: scale(1.1); /* Slight zoom effect when hovering */
+    }

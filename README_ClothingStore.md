@@ -43,7 +43,7 @@ src/
 
 ## 🖥️ Visual Demonstration
 ### Homepage
-![Homepage](./fashion.png)
+![Homepage](./A_modern,_desktop-oriented_homepage_for_a_clothing.png)
 
 ---
 

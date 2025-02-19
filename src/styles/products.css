@@ -1,0 +1,331 @@
+.products-page {
+    display: flex;
+    padding: 20px;
+}
+
+/* Filter menu styling */
+.filter-menu {
+    width: 200px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Roboto Light", sans-serif;
+    border: none;
+}
+
+/* Filter headers for each section */
+.filter-menu h3 {
+    font-size: 1.4em;
+    text-align: left;
+    color: #454545;
+    margin-bottom: 10px;
+    font-weight: bold;
+    border: none;
+}
+
+.filter-menu h4 {
+    font-size: 2.5em;
+    color: rgba(0, 0, 0, 0.45);
+    cursor: pointer;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    margin: 15px 0;
+    font-weight: bold;
+    padding: 12px;
+    background-color: #eaeaea;
+    border-radius: 4px;
+    transition: background-color 0.6s, color 0.6s;
+    border: none;
+}
+
+.filter-menu h4:hover {
+    background-color: rgba(255, 223, 64, 0.72);
+    color: #000000;
+}
+
+/* Filter group container */
+.filter-group {
+    padding-left: 15px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+/* General Filter Button Styles */
+.filter-button {
+    display: flex;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #eaeaea;
+    font-family: "Roboto Light", sans-serif;
+    font-size: 0.9rem;
+    color: #656565;
+
+    transition: background-color 0.6s, color 0.6s, border-color 0.6s, transform 0.3s;
+}
+
+/* Active State */
+.filter-button.active {
+    color: #fd0202;
+    border-color: #ff0000;
+    transform: scale(1.1); /* Slightly enlarges the button and its content */
+}
+
+/* Specific Styling for Color Buttons */
+.color-button {
+    justify-content: flex-start;
+}
+
+.color-button .color-box {
+    margin-right: 10px;
+}
+
+/* Color boxes inside filter */
+.color-box {
+    display: inline-block;
+    width: 5px;
+    height: 1px;
+    border: 1px transparent;
+    border-radius: 18%;
+    margin-right: 10px;
+}
+
+/* Specific colors for color boxes */
+.color-box.white { background-color: #ffffff; }
+.color-box.black { background-color: #202020; }
+.color-box.blue { background-color: #0088dd; }
+.color-box.red { background-color: #d10000; }
+.color-box.green { background-color: #0fdc00; }
+.color-box.yellow { background-color: #ffd300; }
+.color-box.purple { background-color: #cf00cf; }
+.color-box.pink { background-color: #ff54aa; }
+.color-box.orange { background-color: #ff7f00; }
+.color-box.brown { background-color: #814831; }
+.color-box.gray { background-color: #b6b6b6; }
+
+.price-cards {
+    display: contents;
+    gap: 20px;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.price-card {
+    display: flex;
+    align-items: center;
+    background-color: rgba(207, 207, 207, 0.32);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+/* Price label (Min or Max) */
+.price-label {
+    color: #676767;
+    font-family: "Roboto Light", sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 10px;  /* ensures some space between label and input */
+}
+
+.price-btn {
+    background-color: #c3c3c3;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.6s;
+}
+
+.price-btn:hover {
+    background-color: #000000;
+}
+
+.price-input {
+    font-family: "Roboto Light", sans-serif;
+    font-size: 1em;
+    width: 60px;
+    text-align: center;
+    border: solid 1px #ccc;
+    outline: none;
+    margin: 0 10px;
+    padding: 5px;
+    background: transparent;
+}
+
+.price-label {
+    font-family: "Roboto Light", sans-serif;
+    font-size: 1em;
+    text-align: left;
+}
+
+.price-input:focus {
+    border: 1px solid #000000;
+}
+
+/* Search bar styling */
+.search-bar {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.products-content {
+    flex: 1;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: left;
+    border: transparent;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.search-bar input {
+    background-color: rgba(213, 213, 213, 0.32);
+    width: 100%;
+    max-width: 800px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+    border-color: #b39500;
+}
+
+.product-card {
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    transition: transform 0.3s, background-color 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    background-color: #ffc8d2;
+}
+
+
+.product-card img {
+    max-width: 100%;
+    height: 280px;
+    width: 220px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-button {
+    margin: 0 5px;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    transition: background-color 0.4s, transform 0.3s;
+}
+
+/* Active state: pink background for active button */
+.page-button.active {
+    background-color: #1ffff8; /* Pink color for active button */
+    color: #fff;
+}
+
+/* Inactive state remains gray */
+.page-button:not(.active) {
+    background-color: #434343; /* Ensure inactive buttons are gray */
+    color: #ffffff;
+}
+
+/* Hover state for all buttons, including inactive ones */
+.page-button:not(.active):hover {
+    background-color: #555555; /* Slightly lighter gray for hover */
+    transform: scale(1.05);
+}
+
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #333333;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.back-to-top:hover {
+    background-color: #787777;
+}
+
+.nothing-to-show {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+.button-container {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+}
+
+.clear-filters-button {
+    background-color: #e4e4e4; /* Normal state background */
+    color: #686868; /* Normal state text color */
+    border: 1px transparent;
+    border-radius: 25px;
+    font-family: "Roboto bold", sans-serif;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.clear-filters-button:hover {
+
+    background-color: #737373; /* Highlight background color */
+    color: #fff; /* Highlight text color */
+}
+
+

@@ -1,0 +1,126 @@
+.register-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(255, 173, 96, 0.7), rgba(244, 93, 72, 0.7));
+    backdrop-filter: blur(10px);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #4f2c1d;
+}
+
+.register-container {
+    width: 400px;
+    padding: 40px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease, slideIn 0.5s ease forwards;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    background-color: #FFF3E0;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #b5651d;
+    outline: none;
+}
+
+.register-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #b5651d;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.register-button:hover {
+    background-color: #8b4513;
+    transform: scale(1.05);
+}
+
+/* Error and Success message styles */
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.success-message {
+    color: green;
+    margin-top: 10px;
+}
+
+.home-button {
+    background-color: #b5651d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: absolute; /* Adjust positioning as needed */
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Position to the right */
+}
+
+.home-button:hover {
+    background-color: #8b4513;
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.countdown {
+    font-size: 18px;
+    color: #b5651d;
+    margin-top: 10px;
+    animation: fadeIn 1s ease-in-out forwards;
+    opacity: 0; /* Start invisible */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

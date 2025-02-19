@@ -84,4 +84,4 @@ This project is distributed under the MIT License. See the [LICENSE](LICENSE) fi
 ---
 
 ## 🌐 Contact
-For questions or suggestions, feel free to reach out at: **adichis1503@yahoo.com**.
+For questions or suggestions, feel free to reach out at: **burtea_dragos@yahoo.com**.
